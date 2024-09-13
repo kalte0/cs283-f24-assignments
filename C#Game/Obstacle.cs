@@ -36,15 +36,18 @@ public class Obstacle
 		
 	}
 
-	public void Update(float dt)
+	public int Update(float dt)
 	{
 		y = y + (_rainSpeed * dt);
 
-		if ( y >= Window.height + 100 ) // If past the screen on the bottom
+		if ( y >= Window.height - 10  ) // If past the screen on the bottom
 		{
 			x = Window.RandomRange(0, Window.width);
 			y = -100;
-		} 
+			return 1; 
+		}
+
+		return 0; 
 	}
 
 	public void Draw(Graphics g)

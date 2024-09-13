@@ -12,6 +12,7 @@ public class Game
     public static int _numObstacles = 20;
     public static Obstacle[] _obstacles;
 
+    public int score = 0; 
 
     public bool gameOver = false; 
     public Player playerObj = null;
@@ -34,7 +35,7 @@ public class Game
             {
                 if (_obstacles[i] != null)
                 {
-                    _obstacles[i].Update(dt);
+                    score += _obstacles[i].Update(dt);
                     // check for player/object collision:
                     if (_obstacles[i].checkCollision( playerObj.getX(), playerObj.getY() ) ) // if there is a collision:
                     {
@@ -74,6 +75,7 @@ public class Game
             g.DrawString("Acid Rain - RDV - cs283, 2024", font, fontBrush,
                 25, Window.height - 25,
                 format);
+
         }
         else if (gameOver)
         {
@@ -81,6 +83,9 @@ public class Game
                 25, Window.height - 25,
                 format);
         }
+
+        g.DrawString("" + score, font, brush,
+            Window.width - 50, Window.height - 25, format); 
     }
 
     public void MouseClick(MouseEventArgs mouse)
