@@ -12,6 +12,8 @@ using System.Data;
 
 public class Window : System.Windows.Forms.Form
 {
+    
+
     private static int _windowHeight = 480;
     public static int height 
     {
@@ -39,6 +41,7 @@ public class Window : System.Windows.Forms.Form
         InitializeComponent();
         CenterToScreen();
         SetStyle(ControlStyles.ResizeRedraw, true);
+  
     }
 
     private void InitializeComponent()
@@ -64,14 +67,15 @@ public class Window : System.Windows.Forms.Form
         // GameLoop is implemented here
         DateTime current = DateTime.Now;
         TimeSpan dt = current - _lastTime;
-        _game.Update((float) dt.TotalSeconds);
+        _game.Update((float)dt.TotalSeconds);
         Refresh();
         _lastTime = current;
     }
 
     private void DrawCb(object sender, System.Windows.Forms.PaintEventArgs e)
     {
-        _game.Draw(e.Graphics); 
+        _game.Draw(e.Graphics);
+ 
     }
 
     private void ResizeCb(object sender, System.EventArgs e)
