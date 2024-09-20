@@ -26,3 +26,11 @@ https://github.com/user-attachments/assets/85257523-78b7-41b2-8cb6-34cc25819503
 
 
 Credits: 
+Low Poly 3D and Pixel 2d RPG Game Assets - Devil's Workshop https://devilsworkshop.itch.io/low-poly-3d-and-pixel-2d-rpg-game-assets
+
+AllSky Free -- Skybox
+https://distantlantern.itch.io/allsky-free
+
+
+
+
