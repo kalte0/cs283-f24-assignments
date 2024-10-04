@@ -51,3 +51,31 @@ https://assetstore.unity.com/packages/3d/characters/animals/sparrow-quirky-serie
 
 
 
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+Assignment 5: Spring into Action
+
+https://github.com/user-attachments/assets/75e1656f-ec66-45c6-ade9-c3964364b9fe
+- Demo of Player Movement and rigid camera.
+
+![image](https://github.com/user-attachments/assets/d65dc659-6a7d-400f-a43d-e5caeaf5a961)
+
+Here, you can see that the Rigid Body Camera has been activated, and the Spring Camera has been deactivated. If instead, the Spring Camera is activated: 
+
+https://github.com/user-attachments/assets/3d5d15a6-9969-454f-96b2-c1bb6c9055d5
+
+![image](https://github.com/user-attachments/assets/c188a805-9352-4eb5-ad80-976fe01f70ac)
+
+
+
+
+
+  
+
+
+
