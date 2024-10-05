@@ -71,6 +71,13 @@ https://github.com/user-attachments/assets/3d5d15a6-9969-454f-96b2-c1bb6c9055d5
 
 ![image](https://github.com/user-attachments/assets/c188a805-9352-4eb5-ad80-976fe01f70ac)
 
+There are two additional major features:
+1.  I have added mouse controls for the heading and pitch of the camera. However, I found this in addition to either camera controller to be kind of nauseating, so this is false by default, and can be toggled on in the unity object inspector.
+2.  The camera object has a collider, which makes any object it collides with transparent, so that the camera is not obscured by other objects.
+
+both of these features are displayed in the following clip: 
+https://github.com/user-attachments/assets/906ba61e-bbdf-48d5-8e3f-2e8fcd1e951a
+
 
 
 
