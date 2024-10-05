@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 public class SpringFollowCamera : MonoBehaviour
@@ -9,18 +10,31 @@ public class SpringFollowCamera : MonoBehaviour
     public float hDist = 2.0f;
     public float springConstant = 1.0f;
     public float dampConstant = 1.0f;
-    private Vector3 velocity = new Vector3(0, 0, 0); 
+    private Vector3 velocity = new Vector3(0, 0, 0);
+    public float rotationSpeed = 2.0f;
+    private float MouseXOffset = 0.0f;
+    private float MouseYOffset = 0.0f;
+    public bool mouseControl = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        other.GetComponent<MeshRenderer>().enabled = false;
+        Debug.Log("collision");
     }
 
-    // Update is called once per frame
+    private void OnTriggerExit(Collider other)
+    {
+        other.GetComponent<MeshRenderer>().enabled = true;
+        Debug.Log("collision leave"); 
+    }
+
     void Update()
     {
-        
+        if (Input.GetKeyDown("space"))
+        {
+            MouseXOffset = 0.0f;
+            MouseYOffset = 0.0f; 
+        }
     }
 
     void LateUpdate()
@@ -49,10 +63,28 @@ public class SpringFollowCamera : MonoBehaviour
             velocity += springAccel * Time.deltaTime;
             actualPosition += velocity * Time.deltaTime;
 
+            if (mouseControl)
+            {
+                float MouseX = Input.GetAxis("Mouse X"); // set MouseX and MouseY to the current positions of the mouse.
+                float MouseY = Input.GetAxis("Mouse Y");
+
+                float horizontalInput = MouseX * rotationSpeed * Time.deltaTime;
+                float verticalInput = -MouseY * rotationSpeed * Time.deltaTime;
+
+                MouseXOffset += horizontalInput;
+                MouseYOffset += verticalInput;
+            }
+
             // Set the camera's position and rotation with the new values
             // This code assumes that this code runs in a script attached to the camera
             transform.position = actualPosition;
-            transform.rotation = Quaternion.LookRotation(cameraForward);
+            transform.rotation = Quaternion.LookRotation(cameraForward) 
+                                * new Quaternion(Mathf.Sin(MouseYOffset * Mathf.Deg2Rad / 2), 0, 0, Mathf.Cos(MouseYOffset * Mathf.Deg2Rad / 2))
+                                * new Quaternion(0, Mathf.Sin(MouseXOffset * Mathf.Deg2Rad / 2) , 0, Mathf.Cos(MouseXOffset * Mathf.Deg2Rad / 2));
+            //transform.Rotate(Vector3.right, verticalInput);
+            //transform.Rotate(Vector2.up, horizontalInput, Space.World);
         }
+
+        
     }
 }

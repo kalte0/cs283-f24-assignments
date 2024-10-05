@@ -29,7 +29,7 @@ public class PlayerController1 : MonoBehaviour
             // gameObject.transform.position -= Vector3.forward * movementVelocity * Time.deltaTime; 
             gameObject.transform.Translate(0, 0, -movementVelocity * Time.deltaTime);
         }
-        else if (Input.GetKey("a")) // left
+        if (Input.GetKey("a")) // left
         {
             float theta = rotationVelocity * Mathf.Deg2Rad * Time.deltaTime; // 3 degrees in Radians. 
             //gameObject.transform.localRotation *= new Quaternion(0, Mathf.Sin(-theta/2), 0, Mathf.Cos(-theta / 2));
