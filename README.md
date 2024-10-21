@@ -91,6 +91,8 @@ https://github.com/user-attachments/assets/49eafbda-a0a5-4668-86d0-473a59687f0d
 https://github.com/user-attachments/assets/d7188c8a-36f5-4a63-8c9e-e75a4cc5a202
 - Simple IK (You'll notice some odd movement here. There's a bug where sometimes the limb will flip 180 degrees and face away from the target instead of toward it-- struggling to get rid of that!!)
 
+For the gaze controller, a similar issue is happening. The head invariably points in the opposite direction of the target. 
+
 Lowpoly toon cat -- Omabuarts
 https://assetstore.unity.com/packages/3d/characters/animals/lowpoly-toon-cat-lite-66083?srsltid=AfmBOoqZbkM4TvMwpBsWM66AM0SrgQWxN3JBZUR62exAWmKg3T7Jn56H#description
 
