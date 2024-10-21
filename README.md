@@ -79,6 +79,26 @@ both of these features are displayed in the following clip:
 https://github.com/user-attachments/assets/906ba61e-bbdf-48d5-8e3f-2e8fcd1e951a
 
 
+---------------------------------------------------------------------------------------
+Assignment 6: Bezier, Faster, Stronger
+
+https://github.com/user-attachments/assets/6d5ecc66-514b-4600-bcf3-0ffeb42644ae
+- Linear path moving
+
+https://github.com/user-attachments/assets/49eafbda-a0a5-4668-86d0-473a59687f0d
+- Bezier curve path 
+
+https://github.com/user-attachments/assets/d7188c8a-36f5-4a63-8c9e-e75a4cc5a202
+- Simple IK (You'll notice some odd movement here. There's a bug where sometimes the limb will flip 180 degrees and face away from the target instead of toward it-- struggling to get rid of that!!)
+
+Lowpoly toon cat -- Omabuarts
+https://assetstore.unity.com/packages/3d/characters/animals/lowpoly-toon-cat-lite-66083?srsltid=AfmBOoqZbkM4TvMwpBsWM66AM0SrgQWxN3JBZUR62exAWmKg3T7Jn56H#description
+
+
+
+
+
+
 
 
 
