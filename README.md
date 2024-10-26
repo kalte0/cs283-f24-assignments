@@ -96,9 +96,13 @@ For the gaze controller, a similar issue is happening. The head invariably point
 Lowpoly toon cat -- Omabuarts
 https://assetstore.unity.com/packages/3d/characters/animals/lowpoly-toon-cat-lite-66083?srsltid=AfmBOoqZbkM4TvMwpBsWM66AM0SrgQWxN3JBZUR62exAWmKg3T7Jn56H#description
 
+------------------------------------------------------------------------------------
+
+Assignment 7: 
 
 
-
+https://github.com/user-attachments/assets/674c793a-c1a2-4d21-9c56-5e6583731a8d
+- Demonstrates the movement controls and collision detection with the walls and cage :)
 
 
 
