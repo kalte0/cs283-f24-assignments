@@ -104,11 +104,23 @@ Assignment 7:
 https://github.com/user-attachments/assets/674c793a-c1a2-4d21-9c56-5e6583731a8d
 - Demonstrates the movement controls and collision detection with the walls and cage :)
 
+------------------------------------------------------------------------------------
+
 Assignment 8: 
 
 
 https://github.com/user-attachments/assets/e80bda55-27a8-4ad7-8cc4-48553ba7a94e
 - Video showing collecting items, respawning, particle effects on get, and points total in top left of screen!
+
+------------------------------------------------------------------------------------
+Assignment 9: Path
+
+https://github.com/user-attachments/assets/c5b4d5d9-8cf5-4247-a103-c94cf7818aac
+
+Video demonstrating the pathfinding for the sparrow NPC, as well as the functioning collection game!
+
+
+
 
 
 
