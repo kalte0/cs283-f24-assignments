@@ -313,7 +313,7 @@ Transform:
   m_GameObject: {fileID: 366747259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 37.56, y: 6.33, z: -6.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -447,6 +447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cat With Collection Mechanics
       objectReference: {fileID: 0}
+    - target: {fileID: 4711309135159162643, guid: 65be56b53cff33d4f969b1e8b16148d4, type: 3}
+      propertyPath: pointsDisplay
+      value: 
+      objectReference: {fileID: 1306615372}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -519,6 +523,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 238037393}
   m_SourcePrefab: {fileID: 100100000, guid: ad4137f595ec8e2449cacca9df7d3735, type: 3}
+--- !u!114 &1306615372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3835080106633900803, guid: 59a24461c8b3be24dafaad7b5b3efd33, type: 3}
+  m_PrefabInstance: {fileID: 1697591854}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1339915511 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4434654805113737592, guid: ddf61e563d33a0e4c9691dcf42d51cdc, type: 3}
@@ -761,7 +776,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2928902237442923554, guid: b8670fc294fd4bd4aadda368b106c275, type: 3}
       propertyPath: m_Name
-      value: BuildingWithAllColliders
+      value: Building
       objectReference: {fileID: 0}
     - target: {fileID: 6717979553878859665, guid: b8670fc294fd4bd4aadda368b106c275, type: 3}
       propertyPath: m_LocalScale.x
