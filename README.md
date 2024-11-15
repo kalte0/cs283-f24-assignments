@@ -119,12 +119,14 @@ https://github.com/user-attachments/assets/c5b4d5d9-8cf5-4247-a103-c94cf7818aac
 
 Video demonstrating the pathfinding for the sparrow NPC, as well as the functioning collection game!
 
+------------------------------------------------------------------------------------
 
+Assignment 10: Behavior Trees!
 
+There is a flock of sparrows in the nightmare zone-- but there seems to be one not acting quite like the rest... Most of them will run as soon as the player gets within range, and flee in the opposite direction, but one has become *aggressive*! 
 
-
-
-
+https://github.com/user-attachments/assets/de62489f-5349-4685-b13d-47ce2138d982
+Video shows approaching the flock, chasing some sparrows around while being chased by the evil sparrow. The evil sparrow stops following upon the player entering their home base. 
 
 
   
