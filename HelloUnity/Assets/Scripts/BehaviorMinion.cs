@@ -5,7 +5,6 @@ using UnityEngine.Diagnostics;
 using UnityEngine.AI; 
 using BTAI;
 using System;
-using UnityEditor.Purchasing;
 using System.Drawing;
 
 public class BehaviorMinion : MonoBehaviour
